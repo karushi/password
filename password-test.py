@@ -19,6 +19,12 @@ class TestDetails(unittest.TestCase):
         self.assertEqual(self.create_details.account_name, "Karushi")
         self.assertEqual(self.create_details.account_password, "Karushi1")
 
+    def test_save_details(self)
+    """
+    test_save_details test case to test if the details object is saved
+
+    """
+    self.new_details.save_details  
 
 if __name__ == '__main__':
     unittest.main()

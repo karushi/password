@@ -8,3 +8,5 @@ class Details:
 
         self.account_name = account_name
         self.account_password = account_password
+
+    def test_save_details(self):
