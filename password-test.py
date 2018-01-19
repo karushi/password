@@ -23,8 +23,25 @@ class TestDetails(unittest.TestCase):
         """
         test_save_details test case to test if the details object is saved
         """
-        self.new_details.save_details()
-        self.assertEqual(len(Details.details), 1)
+        self.create_details.save_details()
+        self.assertEqual(len(Details.create_details), 1)
+
+    def test_save_multiple_details(self):
+        '''
+        test_save_details_multiple_details to check if we can save save multiple details
+
+        '''
+        self.create_details.save_details()
+        test_details = Details("Karushi", "Karushi1")
+        test_details.save_details()
+        self.assertEqual(len(Details.create_details), 2)
+
+        # def test_delete_details(self):
+        #     '''
+        #     test_delete_details
+
+
+
 
 
 if __name__ == '__main__':
