@@ -24,7 +24,7 @@ class Details:
         Details.create_details.remove(self)
 
     @classmethod
-    def find_by_name(account_password):
+    def find_by_name(cls, account_name):
         '''
         method that in a name and return a name that matches that name
 
@@ -33,6 +33,6 @@ class Details:
         Returns :
             Contact of person that matches the name.
         '''
-        for name in account_password:
-            if name.account_password == name:
-                return name
+        for detail in cls.create_details:
+            if detail.account_name == account_name:
+                return detail
