@@ -1,10 +1,10 @@
-class password:
+class Details:
     '''
-    class that creat new instances of a password.
+    class that creat new instances of details.
     '''
-    create_account = []
+    create_details = []
 
-    def __init__(self, enter_username, enter_password):
+    def __init__(self, account_name, account_password):
 
-        self.enter_username = enter_username
-        self.enter_password = enter_password
+        self.account_name = account_name
+        self.account_password = account_password
