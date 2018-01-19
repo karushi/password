@@ -40,8 +40,11 @@ class TestDetails(unittest.TestCase):
         '''
         test_delete_details to test if we can remove a details
         '''
+        self.create_details.save_details()
+        test_details = Details("Karushi", "Karushi1")
+        test_details.save_details()
 
-        self.create_details.delete_details
+        self.create_details.delete_details()
         self.assertEqual(len(Details.create_details), 1)
 
     def test_find_details_by_name(self):
