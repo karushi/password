@@ -15,3 +15,10 @@ class Details:
 
         '''
         Details.create_details.append(self)
+
+    def delete_details(self):
+        '''
+        delete_details method deletes a saved contact from details
+
+        '''
+        Details.create_details.remove(self)
