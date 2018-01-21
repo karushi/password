@@ -25,7 +25,7 @@ from password import Details
         Function that finds  details by name and return the details
         '''
         return Details.find_by_name(name)
-    def main():
+     def main():
         print ("welcome to your details whats is your name")
         user_name = input()
 
@@ -34,4 +34,18 @@ from password import Details
         print('\n')
 
         while True:
-              print ("use these short codes : cd - create a new details, dd - display details ")
+            print ("use these short codes: cd - create a new details, dd -display details, fd - find details")
+
+            short_code = input().lower()
+            if short_code == 'cd':
+                   print ("New_details")
+                   print("-"*7)
+
+                   print ("account_name")
+                   account_name = input()
+
+                   print ("account_password")
+                   account_password = input()
+
+                   save_details(create_details(account_name, account_password)) # creat and save new details
+                   
