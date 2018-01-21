@@ -62,7 +62,8 @@ class TestDetails(unittest.TestCase):
 
     def test_contact_exists(self):
         '''
-        test to check if we can return a Boolean  if we cannot find the details.
+        test to check if we can return a Boolean  if we cannot find the
+        details.
         '''
         self.create_details.save_details()
         test_details = Details("Karushi", "Karushi1")
@@ -72,7 +73,7 @@ class TestDetails(unittest.TestCase):
 
         self.assertTrue(details_exists)
 
-    def test
+    def test_display_details(self):
 
 
  __name__ == '__main__':

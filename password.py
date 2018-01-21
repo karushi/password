@@ -50,8 +50,8 @@ class Details:
         for details in cls.create_details:
             if details.account_name == account_name:
                 return True
-
-        return False
+            return False
+        
      @classmethod
     def display_details(cls):
         '''

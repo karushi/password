@@ -1,6 +1,7 @@
 #!/usr/bin/env python3.5
 from password import Details
-from password import user
+from details import Details
+
     def create_details(account_name, account_password):
         '''
         function to create details
@@ -25,6 +26,13 @@ from password import user
         Function that finds  details by name and return the details
         '''
         return Details.find_by_name(name)
+
+    def check_existing_details(name):
+        '''
+        Function that check if details with that name and return boolean
+        '''
+        return Details. details_exist(number)
+
      def main():
         print ("welcome to your details whats is your name")
         user_name = input()
@@ -68,7 +76,24 @@ from password import user
                     print('\n')
                     print("Enter the name you want to seach for")
 
+                     search_name = input()
+                            if check_existing_details(search_name):
+                                    search_details= find_deataisl(search_name)
+                                    print(f"{search_details.account_name} {search_account_password}")
+                                    print('-' * 60)
 
-if__name__ =='__main__':
+                                    print(account_name.......{search_deatails.account_passwor}")
+                                    print(f"account_name.......{search_details.name}")
+                            else:
+                                    print("That details does not exist")
 
-   main()
+                    elif short_code == "ex":
+                            print("Bye .......")
+                            break
+                    else:
+                            print("I really didn't get that. Please use the short codes")
+
+
+if __name__ == '__main__':
+
+    main()
