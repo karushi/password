@@ -38,7 +38,7 @@ from password import Details
 
             short_code = input().lower()
             if short_code == 'cd':
-                   print ("New_details")
+                   print ("New_Details")
                    print("-"*7)
 
                    print ("account_name")
@@ -48,4 +48,27 @@ from password import Details
                    account_password = input()
 
                    save_details(create_details(account_name, account_password)) # creat and save new details
-                   
+
+                   print ('\n')
+                   print ("New_Details{account_name}{account_password}created")
+
+                   print ('\n')
+
+        elif short_code == 'dd':
+
+            if display_details():
+                   print ("here is a list of all my details")
+                   print('\n')
+                   for details in display_details():
+                    print("{account_name}{account_password}")
+
+                    print('\n')
+                else:
+
+                    print('\n')
+                    print("Enter the name you want to seach for")
+                    
+
+if__name__ =='__main__':
+
+   main()
