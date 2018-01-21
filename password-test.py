@@ -56,9 +56,7 @@ class TestDetails(unittest.TestCase):
         test_details.save_details()
         found_details = Details.find_by_name("Karushi")
 
-        self.assertEqual(found_details.account_password,
-                         test_details.account_password)
-
+        self.assertEqual(found_details.account_password,test_details.account_password)
 
 if __name__ == '__main__':
     unittest.main()
