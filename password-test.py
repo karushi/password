@@ -28,7 +28,8 @@ class TestDetails(unittest.TestCase):
 
     def test_save_multiple_details(self):
         '''
-        test_save_details_multiple_details to check if we can save save multiple details
+        test_save_details_multiple_details to check if we can save save
+        multiple details
 
         '''
         self.create_details.save_details()
@@ -56,7 +57,23 @@ class TestDetails(unittest.TestCase):
         test_details.save_details()
         found_details = Details.find_by_name("Karushi")
 
-        self.assertEqual(found_details.account_password,test_details.account_password)
+        self.assertEqual(found_details.account_password, test_details.
+                         account_password)
 
-if __name__ == '__main__':
+    def test_contact_exists(self):
+        '''
+        test to check if we can return a Boolean  if we cannot find the details.
+        '''
+        self.create_details.save_details()
+        test_details = Details("Karushi", "Karushi1")
+        test_details. save_details
+
+        details_exitsts = Details.details_exitst("karushi1")
+
+        self.assertTrue(details_exists)
+
+    def test
+
+
+ __name__ == '__main__':
     unittest.main()

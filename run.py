@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.5
 from password import Details
-
+from password import user
     def create_details(account_name, account_password):
         '''
         function to create details
@@ -20,7 +20,7 @@ from password import Details
         '''
         details.delete_details()
 
-    def find_delails(name):
+    def find_details(name):
         '''
         Function that finds  details by name and return the details
         '''
@@ -39,7 +39,7 @@ from password import Details
             short_code = input().lower()
             if short_code == 'cd':
                    print ("New_Details")
-                   print("-"*7)
+                   print("-"*70)
 
                    print ("account_name")
                    account_name = input()
@@ -67,7 +67,7 @@ from password import Details
 
                     print('\n')
                     print("Enter the name you want to seach for")
-                    
+
 
 if__name__ =='__main__':
 

@@ -36,3 +36,25 @@ class Details:
         for detail in cls.create_details:
             if detail.account_name == account_name:
                 return detail
+
+    @classmethod
+    def contact_extist(cls, account_name):
+        '''
+        method that check if details exists
+
+        Args:
+            name: account_name to search if it exists
+        Returns :
+            Boolean: true or false depending if the account_name details_exists
+        '''
+        for details in cls.create_details:
+            if details.account_name == account_name:
+                return True
+
+        return False
+     @classmethod
+    def display_details(cls):
+        '''
+        method that returns the create details
+        '''
+        return cls.create_details
