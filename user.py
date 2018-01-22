@@ -24,19 +24,19 @@ class User:
         '''
         User.create_user.remove(self)
 
-    # @classmethod
-    # def find_by_name(cls, account_name):
-    #     '''
-    #     method that in a name and return a name that matches that name
-    #
-    #     Args:
-    #         name: account_name to search for
-    #     Returns :
-    #         Contact of person that matches the name.
-    #     '''
-    #     for detail in cls.create_user:
-    #         if detail.account_name == account_name:
-    #             return detail
+    @classmethod
+    def find_by_name(cls, first_name, second_name, password):
+        '''
+        method that in a name and return a name that matches that name
+
+        Args:
+            name: first_name to search for
+        Returns :
+            User of person that matches the name.
+        '''
+        for detail in cls.create_user:
+            if detail.first_name == first_name:
+                return detail
     #
     # @classmethod
     # def user_extist(cls, account_name):
