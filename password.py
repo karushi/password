@@ -38,7 +38,7 @@ class Details:
                 return detail
 
     @classmethod
-    def contact_extist(cls, account_name):
+    def details_extist(cls, account_name):
         '''
         method that check if details exists
 
@@ -51,8 +51,8 @@ class Details:
             if details.account_name == account_name:
                 return True
             return False
-        
-     @classmethod
+
+    @classmethod
     def display_details(cls):
         '''
         method that returns the create details

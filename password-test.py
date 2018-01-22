@@ -60,21 +60,23 @@ class TestDetails(unittest.TestCase):
         self.assertEqual(found_details.account_password, test_details.
                          account_password)
 
-    def test_contact_exists(self):
+    def test_detailas_exists(self):
         '''
         test to check if we can return a Boolean  if we cannot find the
         details.
         '''
         self.create_details.save_details()
         test_details = Details("Karushi", "Karushi1")
-        test_details. save_details
+        test_details. save_details()
+        details_exitst = Details.details_exitsts("karushi1")
 
-        details_exitsts = Details.details_exitst("karushi1")
-
-        self.assertTrue(details_exists)
+        self.assertTrue(details_exist)
 
     def test_display_details(self):
+        '''
+        method that returns a list of all details saved
+        '''
 
 
- __name__ == '__main__':
+if __name__ == '__main__':
     unittest.main()
