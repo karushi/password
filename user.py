@@ -10,20 +10,20 @@ class User:
         self.second_name = second_name
         self.password = password
 
-    # def save_details(self):
-    #     '''
-    #     save_details method saves details object into details
-    #
-    #     '''
-    #     Details.create_details.append(self)
-    #
-    # def delete_details(self):
-    #     '''
-    #     delete_details method deletes a saved contact from details
-    #
-    #     '''
-    #     Details.create_details.remove(self)
-    #
+    def save_user(self):
+        '''
+        save_user method saves user object into user
+
+        '''
+        User.create_user.append(self)
+
+    def delete_user(self):
+        '''
+        delete_user method deletes a saved contact from user
+
+        '''
+        User.create_user.remove(self)
+
     # @classmethod
     # def find_by_name(cls, account_name):
     #     '''
@@ -34,28 +34,28 @@ class User:
     #     Returns :
     #         Contact of person that matches the name.
     #     '''
-    #     for detail in cls.create_details:
+    #     for detail in cls.create_user:
     #         if detail.account_name == account_name:
     #             return detail
     #
     # @classmethod
-    # def details_extist(cls, account_name):
+    # def user_extist(cls, account_name):
     #     '''
-    #     method that check if details exists
+    #     method that check if user exists
     #
     #     Args:
     #         name: account_name to search if it exists
     #     Returns :
-    #         Boolean: true or false depending if the account_name details_exists
+    #         Boolean: true or false depending if the account_name user_exists
     #     '''
-    #     for details in cls.create_details:
-    #         if details.account_name == account_name:
+    #     for user in cls.create_user:
+    #         if user.account_name == account_name:
     #             return True
     #         return False
     #
     # @classmethod
-    # def display_details(cls):
+    # def display_user(cls):
     #     '''
-    #     method that returns the create details
+    #     method that returns the create user
     #     '''
-    #     return cls.create_details
+    #     return cls.create_user
